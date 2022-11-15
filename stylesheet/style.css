@@ -1,0 +1,331 @@
+/* All Reset Code Here */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 96%;
+  margin: auto;
+}
+
+/* Header Section Starts Here  */
+
+.nav {
+  background-color: black;
+  height: 20vh;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav__link {
+  text-decoration: none;
+  color: white;
+
+  border: 2px solid coral;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 20px;
+
+  transition: all 0.6s ease-in-out;
+}
+
+.nav__link:hover {
+  transform: scale(1.1);
+  background-color: green;
+  border: 2px solid yellow;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .nav__link {
+    font-weight: bolder;
+    width: 220px;
+    text-align: center;
+    font-size: 10px;
+  }
+}
+
+/* Header Section Ends Here */
+
+/* Main Section Starts Here */
+
+article {
+  background-color: indigo;
+  color: white;
+
+  padding: 10px;
+}
+article h1 {
+  text-align: center;
+  margin: 10px;
+}
+
+.web--btn {
+  background-color: black;
+  color: white;
+  width: 120px;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: bolder;
+  border-radius: 20px;
+}
+
+main::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/* Main Section Ends Here */
+
+/* Skills Section Starts  Here */
+
+.skills__card {
+  background-color: orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills__title {
+  text-align: center;
+  background-color: teal;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+.card {
+  background-color: green;
+  width: 320px;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 4px white;
+
+  transition: all 0.7s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+.card__title {
+  text-align: center;
+  margin: 10px 0px;
+  background-color: saddlebrown;
+}
+.card__body {
+  padding: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .skills__card {
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+/* Skills Section Ends Here*/
+
+/* About Me Section Start's Here  */
+
+.about {
+  background-color: whitesmoke;
+}
+
+.aboutme__title {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: pink;
+  color: black;
+  font-weight: bolder;
+}
+
+.about__body {
+  display: flex;
+  flex-direction: column;
+}
+.about_img {
+  text-align: center;
+  margin: 10px;
+}
+
+#for--about--img {
+  height: 240px;
+  width: 240px;
+  border: 4px solid black;
+  border-radius: 100%;
+
+  transition: all 0.6s ease-in;
+}
+
+#for--about--img:hover {
+  transform: scale(1.06);
+  box-shadow: -8px 8px 8px 8px green;
+}
+
+.about__details {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.about__details h3 {
+  font-size: 26px;
+  background-color: gray;
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 762px) {
+  .about__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .about_img {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__details {
+    width: 750px;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+.about::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+/* About Me Section End's Here  */
+
+/* Contact Section Starts Here  */
+.contact {
+  background-color: palegoldenrod;
+}
+.contact__title {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.contact__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  background-color: gray;
+  margin: 10px 40px;
+  border-radius: 20px;
+}
+form {
+  text-align: center;
+}
+.for--label {
+  margin: 10px;
+}
+form label {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+form input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+}
+#message {
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+}
+.btn {
+  margin: 10px;
+  width: 160px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+
+  transition: all 0.6s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.06);
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__body {
+    width: fit-content;
+  }
+}
+/* Contact Section Ends Here */
+
+/* Footer Section Starts Here  */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 20vh;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+.left__footer h4 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.right__footer h4 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+footer span {
+  font-weight: bolder;
+  text-shadow: 3px 3px red;
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Footer Section Ends Here */
